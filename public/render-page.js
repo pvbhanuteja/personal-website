@@ -4269,7 +4269,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-google-analytics/gatsby-ssr */ "./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "trackingId": "UA-45666519-2",
+    "trackingId": "UA-210958364-1",
     "head": false,
     "anonymize": false,
     "respectDNT": false,
