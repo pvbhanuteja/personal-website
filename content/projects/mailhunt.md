@@ -4,7 +4,7 @@ title: 'Mailhunt'
 github: ''
 ios: ''
 android: ''
-external: 'https://mailhunt.io'
+external: 'https://mailhunt.bhanu.cyou'
 tech:
   - AWS
   - FASTApi

@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '5'
 title: 'Semantic Segmentation - Thesis'
 cover: './segnet-demo.png'
 # github: 'https://github.com/bchiang7/halcyon-site'
