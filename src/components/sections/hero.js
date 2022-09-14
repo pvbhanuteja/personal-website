@@ -65,7 +65,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m an ML researcher and engineer. Currently, a graduate student at
+        I’m AI/ML researcher and engineer. Currently, a graduate student at
         {' '}
         <a href="https://tamu.edu/" target="_blank" rel="noreferrer">
           Texas A{' & '}M University
