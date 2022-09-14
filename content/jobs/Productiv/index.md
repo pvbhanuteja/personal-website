@@ -3,7 +3,7 @@ date: '2022-02-01'
 title: 'Machine Learning Intern'
 company: 'Productiv'
 location: 'College Station, TX'
-range: 'Jan 2022 - Present'
+range: 'May 2022 - Aug 2022'
 url: 'https://productiv.com'
 ---
 
