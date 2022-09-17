@@ -61,26 +61,26 @@ const Hero = () => {
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Venkata Bhanu Teja, Pallakonda</h2>;
   // const three = <h3 className="big-heading">I build things for the web.</h3>;
-  const three = ""
+  const three = '';
   const four = (
     <>
       <p>
-        I’m AI/ML researcher and engineer. Currently, a graduate student at
-        {' '}
+        I’m AI/ML researcher and engineer. Currently, a graduate student at{' '}
         <a href="https://tamu.edu/" target="_blank" rel="noreferrer">
           Texas A{' & '}M University
         </a>
-        , College Station, pursuing a
-        master's degree in computer science.
+        , College Station, pursuing a master's degree in computer science.
+        <br />
+        <br />
+        <a href="/resume.pdf" target="_blank" rel="noreferrer">
+          I'll be graduating in May 2023 and I'm looking for winter intern positions{' (Feb-May)'}{' '}
+          and full-time positions.
+        </a>
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="/resume.pdf"
-      target="_blank"
-      rel="noreferrer">
+    <a className="email-link" href="/resume.pdf" target="_blank" rel="noreferrer">
       Check out my resume!
     </a>
   );
