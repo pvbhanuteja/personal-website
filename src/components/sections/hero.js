@@ -73,8 +73,7 @@ const Hero = () => {
         <br />
         <br />
         <a href="/resume.pdf" target="_blank" rel="noreferrer">
-          I'll be graduating in May 2023 and I'm looking for winter intern positions{' (Feb-May)'}{' '}
-          and full-time positions.
+          I'll be graduating in May 2023 and I'm looking for full-time positions.
         </a>
       </p>
     </>

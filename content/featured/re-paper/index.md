@@ -1,8 +1,8 @@
 ---
-date: '4'
+date: '1'
 title: 'Repaper'
 # cover: './img-clr-demo.png'
-github: 'https://github.com/pvbhanuteja/paper-parser'
+github: 'https://github.com/pvbhanuteja/repaper'
 # external: 'https://github.com/pvbhanuteja/Image-colorization-UNET'
 tech:
   - Transformers
