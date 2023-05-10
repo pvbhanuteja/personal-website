@@ -8,5 +8,4 @@ url: 'https://fincarebank.com/'
 ---
 
 - Developed Whatsapp banking chat‑bot using hugging‑face transformer models for intent classification and entitiesextraction for all the banking related queries.
-- Designed model for Indian ID card detection, field extractor and masker for fields like Name, address, contact number
-and other relevant information and built RESTful APIs using FASTapi and python.
+- Designed model for Indian ID card detection, field extractor and masker for fields like Name, address, contact number and other relevant information and built RESTful APIs using FASTapi and python.

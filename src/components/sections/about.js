@@ -126,7 +126,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Pytorch', 'React', 'Git', 'Docker', 'Sql', 'Linux','Vscode'];
+  const skills = [
+    'Python',
+    'Pytorch',
+    'lightning',
+    'Git',
+    'Docker',
+    'Airflow',
+    'Huggingface',
+    'Vscode',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,25 +145,25 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            Hello!, I'm Bhanu from Hyderabad, India. I have completed my bachelor's degree from the Indian Institute of Technology Tirupati.
-            And I worked for 2 years in India as Machine Learning engineer. Currently, I'm pursuing my master's degree at Texas A&M University, College Station.
-            I have been working on Deep Learning projects throughout my undergrad and work.
+              Hello! I'm Bhanu from Hyderabad, India, currently living in Texas. I completed my
+              bachelor's degree at the Indian Institute of Technology Tirupati, worked for 2 years
+              as a Machine Learning Engineer, and recently finished my master's degree at Texas A&M
+              University, College Station. My focus has been on Deep Learning projects, particularly
+              in computer vision and NLP (text and speech).
             </p>
-
             <p>
-            I have worked in various classification/regression models,
-            dimensionality reduction techniques, feature expansion selection, clustering, and data visualization.
-            And I was very involved in deep learning as well. I worked on many projects on computer vision and NLP(Text and speech).
-            I have a good overview of the state of art architectures of these methods.
-            I worked a lot on transformer models very recently on NLP and speech tasks.
-            And spend a good amount of time on tuning transformer models and setting the right initial parameters and optimizers.
+              With experience in classification/regression models, dimensionality reduction, feature
+              selection, clustering, and data visualization, I'm well-versed in state-of-the-art
+              architectures. I have extensively worked with transformer models in NLP and speech
+              tasks, including model tuning and optimization. Running <code>nvidia-smi</code> is my
+              favorite pastime.
             </p>
-
             <p>
-            Apart from these I love travelling, watching movies and scrolling memes. And I'm a huge fan of cricket sport.
+              Outside of academics, I enjoy traveling, watching movies, scrolling through memes, and
+              passionately following cricket.
             </p>
 
-            <p>Few tech-stack that I used/using for work and research are:</p>
+            <p>I use following on daily basis for work and research</p>
           </div>
 
           <ul className="skills-list">

@@ -5,15 +5,34 @@ import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
 
+const StyledGifContainer = styled.div`
+  width: 80%;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   min-height: 100vh;
   padding: 0;
 
-  @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 10vh;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-height: 700px) {
+      padding-bottom: 10vh;
+    }
   }
 
   h1 {
@@ -59,21 +78,24 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Venkata Bhanu Teja, Pallakonda</h2>;
+  const two = <h2 className="big-heading">Bhanu, Pallakonda</h2>;
   // const three = <h3 className="big-heading">I build things for the web.</h3>;
   const three = '';
   const four = (
     <>
       <p>
-        I’m AI/ML researcher and engineer. Currently, a graduate student at{' '}
+        I'm a machine learning engineer with a master's degree in computer science from{' '}
         <a href="https://tamu.edu/" target="_blank" rel="noreferrer">
           Texas A{' & '}M University
         </a>
-        , College Station, pursuing a master's degree in computer science.
+        , College Station, and a bachelor's degree in electrical engineering from{' '}
+        <a href="https://iittp.ac.in/" target="_blank" rel="noreferrer">
+          IIT Tirupati
+        </a>
         <br />
         <br />
         <a href="/resume.pdf" target="_blank" rel="noreferrer">
-          I'll be graduating in May 2023 and I'm looking for full-time positions.
+          I'm actively seeking full-time machine learning engineer roles
         </a>
       </p>
     </>
@@ -88,22 +110,27 @@ const Hero = () => {
 
   return (
     <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
+      <div>
+        {prefersReducedMotion ? (
+          <>
+            {items.map((item, i) => (
+              <div key={i}>{item}</div>
             ))}
-        </TransitionGroup>
-      )}
+          </>
+        ) : (
+          <TransitionGroup component={null}>
+            {isMounted &&
+              items.map((item, i) => (
+                <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+                  <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
+                </CSSTransition>
+              ))}
+          </TransitionGroup>
+        )}
+      </div>
+      <StyledGifContainer>
+        <img src="https://i.stack.imgur.com/r9Ias.gif" alt="GIF" />
+      </StyledGifContainer>
     </StyledHeroSection>
   );
 };
